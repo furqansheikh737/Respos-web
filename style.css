@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(197, 245, 245);
+
+}
+
+span{
+    color: orange;
+}
+
+.right{
+    width: 60%;
+    height: 100%;
+}
+
+.rtop{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+
+.rtopl{
+    width: 55%;
+    height: 100%;
+    position: relative;
+    background-image: url(https://media.istockphoto.com/id/1287400731/photo/beautiful-afro-girl-with-an-orange.jpg?s=612x612&w=0&k=20&c=1kx4dll1biuNIacgX591gqgf0G7B6spBpl98Cfs26cg=);
+    background-size: cover;
+    background-position: center;
+}
+
+.rtopl h4{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 40px;
+}
+
+.rtopr{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/id/1367805130/photo/artificial-plant-philodendron-monstera-planted-on-pink-background-indoor-tropical-houseplant.jpg?s=612x612&w=0&k=20&c=cfGcKNBA5KRXNL2RW8u8bHME1CxNex-xZI2pR8mQA2w=);
+    background-size: cover;
+    background-position: center;}
+
+.rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://media.istockphoto.com/id/957855934/photo/one-hundred-turkish-lira-banknotes-on-blue-background.jpg?s=612x612&w=0&k=20&c=xPcYD_VxhHd-6Bqta3W5Zej3huLuwq4CmClk-Avs8rE=);
+    background-size: cover;
+    background-position: center;}
+
+.lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.lnavr{
+display: flex;
+align-items: center;
+}
+
+.lnavr a{
+    margin-right: 20px;
+    font-weight: 520;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.lnavr i {
+    color: royalblue;
+}
+
+.lcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lcenter h1{
+      font-size: 90px;
+      font-weight: 900;
+}
+
+.lcenter p{
+    opacity: .6;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.lcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .6;
+}
+
+.lcenter a:hover{
+    color: rgb(115, 107, 150);
+}
+
+@media (max-width: 500px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .main .left{
+        width: 100%;
+    }
+
+    .main .right{
+        width: 100%;
+    }
+}
